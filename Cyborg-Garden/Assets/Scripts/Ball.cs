@@ -6,6 +6,9 @@ public class Ball : MonoBehaviour
 {
     private BallType ballType;
 
+    private BallType changingTo;
+    private int countDownToChange;
+
     private SpriteRenderer sr;
     private Rigidbody2D rb;
 
@@ -20,11 +23,36 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (ballType != changingTo)
+        {
+            if (countDownToChange-- <= 0)
+            {
+                SetType(changingTo);
+            }
+        }
     }
 
     public void InitBall() {
         ballType = (BallType)Random.Range(0, 5);
+        SetType(ballType);
+    }
+
+    public void StartChanging(BallType newType, int framesUntilChange)
+    {
+        changingTo = newType;
+        countDownToChange = framesUntilChange;
+    }
+
+    public void StopChanging()
+    {
+        changingTo = ballType;
+        countDownToChange = -1;
+    }
+
+    public void SetType(BallType newType)
+    {
+        ballType = newType;
         if (ballType == BallType.Joy) {
             sr.color = Color.yellow;
         }
