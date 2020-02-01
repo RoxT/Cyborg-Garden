@@ -43,5 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03c2c90286e2cb40981387010154720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
+  ball: {fileID: 6108016157053819073, guid: ca46b508bd29a294ead7f69f9aa27d25, type: 3}
   spawnIntervalTime: 0
+  minHorizontalForce: 0
+  maxHorizontalForce: 0
