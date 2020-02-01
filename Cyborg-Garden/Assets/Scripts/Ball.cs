@@ -79,6 +79,11 @@ public class Ball : MonoBehaviour
         }
     }
 
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
 }
 
 public enum BallType {
@@ -88,3 +93,5 @@ public enum BallType {
     Disgust,
     Fear
 }
+
+
