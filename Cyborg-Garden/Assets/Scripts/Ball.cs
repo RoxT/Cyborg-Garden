@@ -11,16 +11,9 @@ public class Ball : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         sr = GetComponent<SpriteRenderer>();
         InitBall();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void InitBall() {
@@ -45,6 +38,7 @@ public class Ball : MonoBehaviour
         if (collision.tag == "Collector") {
             Collector c = collision.gameObject.GetComponent<Collector>();
             if (c.collectorType == ballType) {
+                GameManager.Instance.IncreaseScore(ballType, 1);
                 Destroy(gameObject);
             }
         }
