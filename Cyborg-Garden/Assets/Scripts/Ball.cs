@@ -17,6 +17,7 @@ public class Ball : MonoBehaviour
     void Start() {
         sr = GetComponent<SpriteRenderer>();
         InitBall();
+        changingTo = ballType;
     }
 
     // Update is called once per frame
