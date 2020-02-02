@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: 1958427104593922780, guid: 5260b7a738959cb44a1dfeda2d99d2ea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.455129
+      value: 5.79
       objectReference: {fileID: 0}
     - target: {fileID: 1958427104593922780, guid: 5260b7a738959cb44a1dfeda2d99d2ea,
         type: 3}
@@ -472,8 +472,6 @@ Transform:
   - {fileID: 1170573153}
   - {fileID: 617880763}
   - {fileID: 366123070}
-  - {fileID: 590977132}
-  - {fileID: 72756483}
   m_Father: {fileID: 532671688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -832,6 +830,8 @@ Transform:
   - {fileID: 779486320}
   - {fileID: 778512480}
   - {fileID: 454273778}
+  - {fileID: 590977132}
+  - {fileID: 72756483}
   m_Father: {fileID: 532671688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1889,10 +1889,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5655633989601862444, guid: 5260b7a738959cb44a1dfeda2d99d2ea,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.993973
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655633989601862444, guid: 5260b7a738959cb44a1dfeda2d99d2ea,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7898616891000578253, guid: 5260b7a738959cb44a1dfeda2d99d2ea,
         type: 3}
       propertyPath: m_Name
       value: Collector (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115575689972951362, guid: 5260b7a738959cb44a1dfeda2d99d2ea,
+        type: 3}
+      propertyPath: collectorType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5260b7a738959cb44a1dfeda2d99d2ea, type: 3}
@@ -2209,7 +2224,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 320268209}
+    m_TransformParent: {fileID: 726080602}
     m_Modifications:
     - target: {fileID: 3562611718961988882, guid: 14ec93323289c3c418178a70845e2f2f,
         type: 3}
@@ -2642,7 +2657,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 320268209}
+    m_TransformParent: {fileID: 726080602}
     m_Modifications:
     - target: {fileID: 3562611718961988882, guid: 14ec93323289c3c418178a70845e2f2f,
         type: 3}
