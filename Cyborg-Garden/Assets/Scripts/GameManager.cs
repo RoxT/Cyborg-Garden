@@ -177,17 +177,17 @@ public class GameManager : MonoBehaviour
     }
 
     public void CheckWinCondition() {
-        if (SceneManager.GetActiveScene().buildIndex == 2) {
+        if (SceneManager.GetActiveScene().buildIndex == 3) {
             if (joyLevel >= 5 && sadnessLevel >= 5 && fearLevel >= 5) {
-                GameplayData.LevelsCompleted = 1;
+                GameplayData.LevelsCompleted = 2;
                 GameplayData.Money = GameplayData.Money + timeRemaining;
                 GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 3) {
+        else if (SceneManager.GetActiveScene().buildIndex == 2) {
             if (joyLevel >= 5) {
-                GameplayData.LevelsCompleted = 2;
+                GameplayData.LevelsCompleted = 1;
                 GameplayData.Money = GameplayData.Money + timeRemaining;
                 GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
