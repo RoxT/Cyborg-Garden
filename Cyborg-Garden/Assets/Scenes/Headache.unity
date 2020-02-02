@@ -739,6 +739,21 @@ PrefabInstance:
       propertyPath: framesUntilChange
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.97264934
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2f61f73165ec754d87ed402a86443b1, type: 3}
 --- !u!1001 &279988486
@@ -1589,7 +1604,7 @@ PrefabInstance:
     - target: {fileID: 2784772058201342459, guid: a2f61f73165ec754d87ed402a86443b1,
         type: 3}
       propertyPath: trapType
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2784772058201342459, guid: a2f61f73165ec754d87ed402a86443b1,
         type: 3}
@@ -1600,6 +1615,21 @@ PrefabInstance:
         type: 3}
       propertyPath: scaleVelocityBy
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.07098794
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2f61f73165ec754d87ed402a86443b1, type: 3}

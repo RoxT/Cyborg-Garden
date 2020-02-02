@@ -253,6 +253,21 @@ PrefabInstance:
       propertyPath: scaleVelocityBy
       value: 0.89
       objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.033422947
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221211385790979308, guid: a2f61f73165ec754d87ed402a86443b1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2f61f73165ec754d87ed402a86443b1, type: 3}
 --- !u!1001 &376166121
