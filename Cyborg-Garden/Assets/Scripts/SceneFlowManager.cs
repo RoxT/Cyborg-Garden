@@ -29,11 +29,14 @@ public class SceneFlowManager : MonoBehaviour
         else if (SceneManager.GetActiveScene().buildIndex == 10) {
             if (GameplayData.LevelsCompleted == 8) {
                 SceneManager.LoadScene(13);
-            } else
+            }
+            else
                 SceneManager.LoadScene(GameplayData.LevelsCompleted + 2);
         }
-            
+
         else if (SceneManager.GetActiveScene().buildIndex == 12)
             SceneManager.LoadScene(GameplayData.LevelsCompleted + 2);
+        else if (SceneManager.GetActiveScene().buildIndex == 13)
+            SceneManager.LoadScene(14);
     }
 }

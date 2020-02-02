@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckWinCondition() {
         if (SceneManager.GetActiveScene().buildIndex == 2) {
-            if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
+            if (joyLevel >= 5 && sadnessLevel >= 5 && fearLevel >= 5) {
                 GameplayData.LevelsCompleted = 1;
                 GameplayData.Money = GameplayData.Money + timeRemaining;
                 GameplayData.MoneyEarnedThisLevel = timeRemaining;
