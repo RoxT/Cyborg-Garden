@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Diagnosis.unity
     guid: 00a8057d55094fb45ad67a3028a6492a
+  - enabled: 1
+    path: Assets/Scenes/ThankYouAnimated.unity
+    guid: 74c68f8cda79c584395de4e0ed8b78c4
   m_configObjects: {}
