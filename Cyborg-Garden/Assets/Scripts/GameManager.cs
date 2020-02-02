@@ -180,48 +180,64 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 2) {
             if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
                 GameplayData.LevelsCompleted = 1;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 3) {
             if (joyLevel >= 5) {
                 GameplayData.LevelsCompleted = 2;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 4) {
             if (sadnessLevel >= 5) {
                 GameplayData.LevelsCompleted = 3;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 5) {
             if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
                 GameplayData.LevelsCompleted = 4;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 6) {
             if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5) {
                 GameplayData.LevelsCompleted = 5;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 7) {
             if (joyLevel >= 5) {
                 GameplayData.LevelsCompleted = 6;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 8) {
             if (angerLevel >= 5) {
                 GameplayData.LevelsCompleted = 7;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
         else if (SceneManager.GetActiveScene().buildIndex == 9) {
             if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
                 GameplayData.LevelsCompleted = 8;
+                GameplayData.Money = GameplayData.Money + timeRemaining;
+                GameplayData.MoneyEarnedThisLevel = timeRemaining;
                 SceneManager.LoadScene(11);
             }
         }
