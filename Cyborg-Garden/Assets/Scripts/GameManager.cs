@@ -174,15 +174,51 @@ public class GameManager : MonoBehaviour
     }
 
     public void CheckWinCondition() {
-        Debug.Log(fearScore);
         if (SceneManager.GetActiveScene().buildIndex == 2) {
             if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
                 GameplayData.LevelsCompleted = 1;
                 SceneManager.LoadScene(11);
             }
-        } else if (SceneManager.GetActiveScene().buildIndex == 3) {
-            if (angerLevel >= 5 && sadnessLevel >=5 ) {
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3) {
+            if (joyLevel >= 5) {
                 GameplayData.LevelsCompleted = 2;
+                SceneManager.LoadScene(11);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 4) {
+            if (sadnessLevel >= 5) {
+                GameplayData.LevelsCompleted = 3;
+                SceneManager.LoadScene(11);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 5) {
+            if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
+                GameplayData.LevelsCompleted = 4;
+                SceneManager.LoadScene(11);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 6) {
+            if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5) {
+                GameplayData.LevelsCompleted = 5;
+                SceneManager.LoadScene(11);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 7) {
+            if (joyLevel >= 5) {
+                GameplayData.LevelsCompleted = 6;
+                SceneManager.LoadScene(11);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 8) {
+            if (angerLevel >= 5) {
+                GameplayData.LevelsCompleted = 7;
+                SceneManager.LoadScene(11);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 9) {
+            if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
+                GameplayData.LevelsCompleted = 8;
                 SceneManager.LoadScene(11);
             }
         }
