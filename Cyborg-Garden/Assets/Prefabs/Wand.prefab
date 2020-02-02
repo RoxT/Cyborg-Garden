@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7777620156365986481}
   - component: {fileID: 7777620156365986480}
   - component: {fileID: 7777620156365986487}
+  - component: {fileID: 7778111757902959851}
   m_Layer: 0
   m_Name: Wand
   m_TagString: Untagged
@@ -95,7 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41d80f6e554a4f498477c2b31a4cb1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 50
 --- !u!58 &7777620156365986487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112,3 +112,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3
+--- !u!114 &7778111757902959851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777620156365986483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8424f298277944d952555d67ac5850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: -50
