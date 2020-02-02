@@ -12,11 +12,11 @@ public class DiagnosisUI : MonoBehaviour
     void Start()
     {
         if (GameplayData.LevelsCompleted == 0) {
-            patientTitle.text = "Patient #1: Mixed Emotions";
-            patientDescription.text = "Patient #1 is prone to sadness and needs help sorting out a whirlwind of mixed emotions. Bring balance to this psyche without letting the blues take over!";
+            patientTitle.text = "Patient #1: Headache";
+            patientDescription.text = "Patient #1 is suffering from a headache and needs to find joy amid a barrage of disgust. Help this psyche transform sadness into joy.";
         } else if (GameplayData.LevelsCompleted == 1) {
-            patientTitle.text = "Patient #2: Headache";
-            patientDescription.text = "Patient #2 is suffereng from a headache and needs to find joy amid a barrage of disgust. Help this psyche transform sadness into joy.";
+            patientTitle.text = "Patient #2: Mixed Emotions";
+            patientDescription.text = "Patient #2 is prone to sadness and needs help sorting out a whirlwind of mixed emotions. Bring balance to this psyche without letting the blues take over!";
         } else if (GameplayData.LevelsCompleted == 2) {
             patientTitle.text = "Patient #3: Denial";
             patientDescription.text = "Patient #3 is suffering from denial and needs to find calm amid conflicting emotions. Help this psyche transform agitation into a more mellow mood.";
