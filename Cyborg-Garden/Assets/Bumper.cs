@@ -6,6 +6,9 @@ public class Bumper : MonoBehaviour
 {
     public float forceMagnitude;
 
+    public AudioClip bumperSound;
+    private AudioSource audioSource;
+
     [HideInInspector] public bool isShaking;
 
     Animator animator;

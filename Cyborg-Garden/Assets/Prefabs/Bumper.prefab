@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMagnitude: 10
+  bumperSound: {fileID: 8300000, guid: 91fffedf951c7a44ca8223ea8f953379, type: 3}
   isShaking: 0
 --- !u!95 &6267750280765655025
 Animator:
