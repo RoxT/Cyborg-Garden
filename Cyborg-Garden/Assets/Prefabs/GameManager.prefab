@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b277e72c9138c45469339987883f96ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  announcement: {fileID: 8262921325580599786, guid: 4c367bbd363e1e342aec712ed7c6a9e8,
+    type: 3}
   joyScore: 0
   sadnessScore: 0
   angerScore: 0
