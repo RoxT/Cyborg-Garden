@@ -69,7 +69,7 @@ public class BallSpawner : MonoBehaviour
         }
         if (atLeastOneEMotion == false)
         {
-            emotions[0] = true;
+            emotions = new bool[] { true, true, true, true, true};
         }
     } 
 }
