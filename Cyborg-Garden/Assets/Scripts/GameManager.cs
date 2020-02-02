@@ -47,7 +47,9 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public int fearScore;
     [HideInInspector] public int disgustScore;
 
-    private float timeElapsed;
+    public float levelTime;
+
+    private float timeRemaining;
 
     void Awake() {
         _instance = this;
@@ -60,9 +62,10 @@ public class GameManager : MonoBehaviour
     }
 
     void Update() {
-        timeElapsed += Time.deltaTime;
-        GameplayUI.Instance.UpdateTime(timeElapsed);
+        timeRemaining -= Time.deltaTime;
+        GameplayUI.Instance.UpdateTime(timeRemaining);
         CheckWinCondition();
+        CheckLoseCondition();
     }
 
     public void IncreaseScore(BallType ballType, int increaseValue) {
@@ -170,7 +173,7 @@ public class GameManager : MonoBehaviour
         fearLevel = 0;
         disgustLevel = 0;
 
-        timeElapsed = 0;
+        timeRemaining = levelTime;
     }
 
     public void CheckWinCondition() {
@@ -221,6 +224,12 @@ public class GameManager : MonoBehaviour
                 GameplayData.LevelsCompleted = 8;
                 SceneManager.LoadScene(11);
             }
+        }
+    }
+
+    public void CheckLoseCondition() {
+        if (timeRemaining <= 0) {
+            SceneManager.LoadScene(10);
         }
     }
 }

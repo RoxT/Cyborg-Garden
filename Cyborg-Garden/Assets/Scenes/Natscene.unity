@@ -1529,7 +1529,7 @@ PrefabInstance:
     - target: {fileID: 197021202049622941, guid: 96c4c8907768b4849bd32619ea64b479,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 197021202049622941, guid: 96c4c8907768b4849bd32619ea64b479,
         type: 3}
@@ -1759,6 +1759,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8262921325580599786, guid: 4c367bbd363e1e342aec712ed7c6a9e8,
         type: 3}
+    - target: {fileID: 2805586486231327323, guid: d34957aa621e0484cbfa355a1075a767,
+        type: 3}
+      propertyPath: levelTime
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d34957aa621e0484cbfa355a1075a767, type: 3}
 --- !u!1001 &1528906898

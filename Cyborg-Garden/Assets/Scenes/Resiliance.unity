@@ -324,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 197021202049622941, guid: 96c4c8907768b4849bd32619ea64b479,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 197021202049622941, guid: 96c4c8907768b4849bd32619ea64b479,
         type: 3}
@@ -459,6 +459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805586486231327323, guid: d34957aa621e0484cbfa355a1075a767,
+        type: 3}
+      propertyPath: levelTime
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d34957aa621e0484cbfa355a1075a767, type: 3}
@@ -1169,7 +1174,7 @@ Transform:
   m_LocalScale: {x: 1.641, y: 1.641, z: 1.641}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &567737071
 GameObject:

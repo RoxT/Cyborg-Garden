@@ -2138,6 +2138,11 @@ PrefabInstance:
       propertyPath: disgustLevelThreshold
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2805586486231327323, guid: d34957aa621e0484cbfa355a1075a767,
+        type: 3}
+      propertyPath: levelTime
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d34957aa621e0484cbfa355a1075a767, type: 3}
 --- !u!1001 &3562611719560797462

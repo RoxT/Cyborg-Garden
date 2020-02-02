@@ -22,7 +22,9 @@ public class SceneFlowManager : MonoBehaviour
             SceneManager.LoadScene(1);
         else if (SceneManager.GetActiveScene().buildIndex == 1)
             SceneManager.LoadScene(2);
-        else if (SceneManager.GetActiveScene().buildIndex == 11) 
+        else if (SceneManager.GetActiveScene().buildIndex == 11)
+            SceneManager.LoadScene(GameplayData.LevelsCompleted + 2);
+        else if (SceneManager.GetActiveScene().buildIndex == 10)
             SceneManager.LoadScene(GameplayData.LevelsCompleted + 2);
     }
 }
