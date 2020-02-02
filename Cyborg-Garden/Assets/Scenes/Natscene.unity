@@ -909,6 +909,31 @@ PrefabInstance:
       propertyPath: spawnIntervalTime
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4123988992981710614, guid: f32d084009950e946b4ccbadceeaf1f7,
+        type: 3}
+      propertyPath: spawnJoy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123988992981710614, guid: f32d084009950e946b4ccbadceeaf1f7,
+        type: 3}
+      propertyPath: spawnSadness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123988992981710614, guid: f32d084009950e946b4ccbadceeaf1f7,
+        type: 3}
+      propertyPath: spawnAnger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123988992981710614, guid: f32d084009950e946b4ccbadceeaf1f7,
+        type: 3}
+      propertyPath: spawnDisgust
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123988992981710614, guid: f32d084009950e946b4ccbadceeaf1f7,
+        type: 3}
+      propertyPath: spawnFear
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7537936389635232749, guid: f32d084009950e946b4ccbadceeaf1f7,
         type: 3}
       propertyPath: m_LocalPosition.x
