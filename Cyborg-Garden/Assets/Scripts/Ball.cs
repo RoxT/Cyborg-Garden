@@ -15,9 +15,11 @@ public class Ball : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
+    }
+
+    void Awake()
+    {
         sr = GetComponent<SpriteRenderer>();
-        InitBall();
-        changingTo = ballType;
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class Ball : MonoBehaviour
     public void SetType(BallType newType)
     {
         ballType = newType;
+        changingTo = newType;
         if (ballType == BallType.Joy) {
             sr.color = Color.yellow;
         }
