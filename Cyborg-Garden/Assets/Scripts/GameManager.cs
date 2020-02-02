@@ -46,29 +46,21 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public int fearScore;
     [HideInInspector] public int disgustScore;
 
+    private float timeElapsed;
+
     void Awake() {
         _instance = this;
     }
 
     // Start is called before the first frame update
     void Start() {
-        joyScore = 0;
-        sadnessScore = 0;
-        angerScore = 0;
-        fearScore = 0;
-        disgustScore = 0;
+        ResetGameManager();
 
-        joyPointsThisLevel = 0;
-        sadnessPointsThisLevel = 0;
-        angerPointsThisLevel = 0;
-        fearPointsThisLevel = 0;
-        disgustPointsThisLevel = 0;
+    }
 
-        joyLevel = 0;
-        sadnessLevel = 0;
-        angerLevel = 0;
-        fearLevel = 0;
-        disgustLevel = 0;
+    void Update() {
+        timeElapsed += Time.deltaTime;
+        GameplayUI.Instance.UpdateTime(timeElapsed);
     }
 
     public void IncreaseScore(BallType ballType, int increaseValue) {
@@ -155,5 +147,27 @@ public class GameManager : MonoBehaviour
         t.text = s;
         t.color = color;
         Destroy(g, 1.0f);
+    }
+
+    public void ResetGameManager() {
+        joyScore = 0;
+        sadnessScore = 0;
+        angerScore = 0;
+        fearScore = 0;
+        disgustScore = 0;
+
+        joyPointsThisLevel = 0;
+        sadnessPointsThisLevel = 0;
+        angerPointsThisLevel = 0;
+        fearPointsThisLevel = 0;
+        disgustPointsThisLevel = 0;
+
+        joyLevel = 0;
+        sadnessLevel = 0;
+        angerLevel = 0;
+        fearLevel = 0;
+        disgustLevel = 0;
+
+        timeElapsed = 0;
     }
 }

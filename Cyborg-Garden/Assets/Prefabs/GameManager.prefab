@@ -45,6 +45,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   announcement: {fileID: 8262921325580599786, guid: 4c367bbd363e1e342aec712ed7c6a9e8,
     type: 3}
+  joyLevel: 0
+  joyLevelThreshold: 2
+  sadnessLevel: 0
+  sadnessLevelThreshold: 2
+  angerLevel: 0
+  angerLevelThreshold: 2
+  fearLevel: 0
+  fearLevelThreshold: 2
+  disgustLevel: 0
+  disgustLevelThreshold: 2
   joyScore: 0
   sadnessScore: 0
   angerScore: 0
