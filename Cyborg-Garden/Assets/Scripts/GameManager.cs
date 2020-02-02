@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
     void Update() {
         timeElapsed += Time.deltaTime;
         GameplayUI.Instance.UpdateTime(timeElapsed);
+        CheckWinCondition();
     }
 
     public void IncreaseScore(BallType ballType, int increaseValue) {
@@ -169,5 +171,20 @@ public class GameManager : MonoBehaviour
         disgustLevel = 0;
 
         timeElapsed = 0;
+    }
+
+    public void CheckWinCondition() {
+        Debug.Log(fearScore);
+        if (SceneManager.GetActiveScene().buildIndex == 2) {
+            if (joyLevel >= 5 && sadnessLevel >= 5 && angerLevel >= 5 && fearLevel >= 5 && disgustLevel >= 5) {
+                GameplayData.LevelsCompleted = 1;
+                SceneManager.LoadScene(11);
+            }
+        } else if (SceneManager.GetActiveScene().buildIndex == 3) {
+            if (angerLevel >= 5 && sadnessLevel >=5 ) {
+                GameplayData.LevelsCompleted = 2;
+                SceneManager.LoadScene(11);
+            }
+        }
     }
 }
