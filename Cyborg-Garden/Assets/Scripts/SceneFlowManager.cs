@@ -8,7 +8,9 @@ public class SceneFlowManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 2) {
+            GameplayData.Money = 0;
+        }
     }
 
     // Update is called once per frame
