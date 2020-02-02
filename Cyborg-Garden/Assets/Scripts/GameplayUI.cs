@@ -41,6 +41,8 @@ public class GameplayUI : MonoBehaviour
     public Sprite LED_on;
     public Image LED_off;
 
+    public Text timeRemaining;
+
     void Awake() {
         _instance = this;
     }
@@ -145,5 +147,9 @@ public class GameplayUI : MonoBehaviour
                 disgustLED_List[level].color = Color.green;
             }
         }
+    }
+
+    public void UpdateTime(float time) {
+        timeRemaining.text = time.ToString("F2");
     }
 }
